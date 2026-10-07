@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="08/12/26||12:04:34" using="Simscape Multibody Link Version 7.4" from="SolidWorks 33.4.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="TWO_link_ROBOTIC_ARM_ASSEMBLY_" uid="TWO_link_ROBOTIC_ARM_ASSEMBLY_" version="118">
+<AssemblyFile name="TWO_link_ROBOTIC_ARM_ASSEMBLY_.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Part_0_LINK_0-1" uid="Part_0_LINK_0-1" grounded="true" entityUid="Part_0_LINK_0*:*Default">
+<Transform>
+<Rotation>-0.98685310741601506 0 -0.16161975245419488 0 1 0 0.16161975245419485 0 -0.98685310741601495</Rotation>
+<Translation>0.74586261176253366 0 1.3555169650043288</Translation>
+</Transform>
+</Instance>
+<Instance name="Part_1_ARM_1-1" uid="Part_1_ARM_1-1" entityUid="Part_1_ARM_1*:*Default">
+<Transform>
+<Rotation>0.8866967129224298 -0.4331835579857638 0.16161975245418711 0.43895444492242042 0.89850931841737158 4.1106712218158536e-15 -0.1452168536203978 0.070943708727023033 0.98685310741601628</Rotation>
+<Translation>0.82325207926660704 0.1373111278184104 1.3555091962893007</Translation>
+</Transform>
+</Instance>
+<Instance name="Part_2_ARM_2-1" uid="Part_2_ARM_2-1" entityUid="Part_2_ARM_2*:*Default">
+<Transform>
+<Rotation>0.97949735533131088 0.12026631496646428 0.16161975245419305 -0.12186850713919382 0.99254625432151233 -5.2171808540002473e-16 -0.16041507992277948 -0.019696357955797997 0.9868531074160154</Rotation>
+<Translation>0.98430287135499805 0.16426343252998044 1.3443332785493645</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part_0_LINK_0-1</Uid>
+</InstancePath>
+<Position>0.061478808098009097 0.041302843724349197 -0.0050000000000001155</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part_1_ARM_1-1</Uid>
+</InstancePath>
+<Position>-1.1102230246251565e-16 0 -0.0075000000000000622</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part_0_LINK_0-1</Uid>
+</InstancePath>
+<Position>1.1102230246251565e-16 0.099999999999999992 0.0049999999999998934</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part_1_ARM_1-1</Uid>
+</InstancePath>
+<Position>-0.085000000000000075 0 -0.017500000000000071</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part_1_ARM_1-1</Uid>
+</InstancePath>
+<Position>0 0 0.0074999999999998401</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part_2_ARM_2-1</Uid>
+</InstancePath>
+<Position>-1.1102230246251565e-16 0 -0.0074999999999998401</Position>
+<Axis>1.1102230246251565e-16 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part_1_ARM_1-1</Uid>
+</InstancePath>
+<Position>0.084999999999999964 0 -0.0024999999999999467</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part_2_ARM_2-1</Uid>
+</InstancePath>
+<Position>-0.085000000000000075 0 -0.017499999999999849</Position>
+<Axis>-1.1102230246251565e-16 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Part_0_LINK_0" uid="Part_0_LINK_0*:*Default" version="151">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part_0_LINK_0.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.41394541998389983</Mass>
+<CenterOfMass>-0.00078842827386237948 0.014983369756090959 2.4485653125768577e-05</CenterOfMass>
+<Inertia>0.00066287896751950266 0.0010429305604766426 0.00067479510776704968 -8.6161075275291422e-07 -7.9897926265759904e-09 1.3307411073459631e-05</Inertia>
+</MassProperties>
+<GeometryFile name="Part_0_LINK_0_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.90980392156862744" g="0.52156862745098043" b="0" a="1"/>
+<Diffuse r="0.72784313725490202" g="0.41725490196078435" b="0" a="1"/>
+<Specular r="0.27294117647058824" g="0.15647058823529411" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Part_1_ARM_1" uid="Part_1_ARM_1*:*Default" version="134">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part_1_ARM_1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.11467278603555639</Mass>
+<CenterOfMass>-0.011223227670876404 -0.003427973709266978 0.00031480807603883248</CenterOfMass>
+<Inertia>1.6202536316014983e-05 0.00036752294972959408 0.0003785609904738864 -1.2374991170879386e-07 2.9971324522371163e-06 3.6740316777101553e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Part_1_ARM_1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.078431372549019607" g="0.2196078431372549" b="0.69019607843137254" a="1"/>
+<Diffuse r="0.062745098039215685" g="0.17568627450980392" b="0.55215686274509801" a="1"/>
+<Specular r="0.023529411764705882" g="0.065882352941176461" b="0.20705882352941177" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Part_2_ARM_2" uid="Part_2_ARM_2*:*Default" version="164">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part_2_ARM_2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.097050440362680152</Mass>
+<CenterOfMass>-0.016941405544314614 -0.003193799655862588 0.0003922026904591809</CenterOfMass>
+<Inertia>1.1746182264354711e-05 0.00032937536012655344 0.00033479660990934335 -1.2156771637841427e-07 2.5905472787728318e-06 3.2976849117681477e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Part_2_ARM_2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.078431372549019607" g="0.2196078431372549" b="0.69019607843137254" a="1"/>
+<Diffuse r="0.062745098039215685" g="0.17568627450980392" b="0.55215686274509801" a="1"/>
+<Specular r="0.023529411764705882" g="0.065882352941176461" b="0.20705882352941177" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
