@@ -1,4 +1,4 @@
-﻿# Two-Link Robotic Arm - SolidWorks + MATLAB/Simulink
+# Two-Link Robotic Arm - SolidWorks + MATLAB/Simulink
 
 A **two-link robotic arm** designed in **SolidWorks** and imported into **MATLAB / Simscape Multibody** for dynamic simulation and PID-control analysis.
 
@@ -41,11 +41,11 @@ Response Analysis
 
 ```text
 robotic-arm-simulation/
-â”œâ”€â”€ cad/
-â”‚   â”œâ”€â”€ solidworks/
-â”‚   â””â”€â”€ step/
-â”œâ”€â”€ simulation/
-â””â”€â”€ results/
+|-- cad/
+|   |-- solidworks/
+|   \-- step/
+|-- simulation/
+\-- results/
 ```
 
 ## Included Files
